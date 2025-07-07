@@ -26,3 +26,13 @@ This project demonstrates how to build a lightweight, scalable GenAI assistant t
 ```bash
 git clone https://github.com/yourusername/ask-my-company-docs.git
 cd ask-my-company-docs
+
+# 🛠️ Tech Stack:
+# Area	            Tool / Service
+# LLM               Inference	AWS Bedrock (Claude, Titan)
+# Embedding         Model	Amazon Titan / Cohere
+# Vector            DB	Amazon OpenSearch / FAISS
+# Document          Store	Amazon S3
+# Orchestration	    LangChain / Custom Python
+# App Layer	        Lambda + API Gateway
+# UI (Optional)	    Streamlit or simple HTML
