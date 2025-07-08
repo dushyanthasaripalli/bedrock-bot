@@ -106,6 +106,12 @@ resource "null_resource" "example" {
     }
 }
 
+resource "null_resource" "example2" {
+    triggers = {
+    value = "A example resource that does nothing!"
+    }
+}
+
 # #### Module S3
 # module cappy-ai-s3{
 #     source                    = "./modules/s3"
