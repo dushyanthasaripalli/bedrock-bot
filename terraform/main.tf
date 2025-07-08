@@ -6,13 +6,13 @@ provider "aws" {
   region = "us-east-1"
 }
 
-# Create an S3 bucket
+### Create an S3 bucket
 resource "aws_s3_bucket" "react_site" {
   bucket        = "cappy-ai-react-site-bucket"  # ⚠️ MUST be globally unique
   force_destroy = true
 }
 
-# Enable static website hosting
+### Enable static website hosting
 resource "aws_s3_bucket_website_configuration" "react_site" {
   bucket = aws_s3_bucket.react_site.id
 
