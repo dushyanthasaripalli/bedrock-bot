@@ -3,8 +3,8 @@ import React from 'react';
 function App() {
   return (
     <div>
-      <h1>cappy AI Development!</h1>
-      <p>Its getting there....</p>
+      <h1>Cappy AI Development!</h1>
+      <p>It's getting there....</p>
     </div>
   );
 }
