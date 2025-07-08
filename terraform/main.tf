@@ -2,9 +2,9 @@
 #####------ Main Terraform Configuration File ------#####
 #########################################################
 
-provider "aws" {
-  region = "us-east-1"
-}
+# provider "aws" {
+#   region = "us-east-1"
+# }
 
 # Create an S3 bucket
 resource "aws_s3_bucket" "react_site" {
