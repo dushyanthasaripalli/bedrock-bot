@@ -72,6 +72,7 @@ resource "aws_s3_object" "react_files" {
   }, split(".", each.value)[length(split(".", each.value)) - 1], "application/octet-stream")
 }
 
+
 output "build_files" {
   value = fileset("${path.module}/../frontend/build", "**/*")
 }
