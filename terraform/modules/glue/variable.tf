@@ -1,0 +1,11 @@
+variable glue_etl_role_arn{}
+variable tags{}
+variable s3_script_bucket{}
+variable ou{}
+variable s3_results_bucket{}
+variable region{}
+variable rs_account_id_clm{}
+variable rs_cluster_id_clm{}
+variable rs_db_clm{}
+variable rs_db_user_clm{}
+variable rs_edla_role_clm{}
