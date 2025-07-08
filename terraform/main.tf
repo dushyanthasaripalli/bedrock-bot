@@ -72,14 +72,14 @@ resource "aws_s3_object" "react_files" {
   }, split(".", each.value)[length(split(".", each.value)) - 1], "application/octet-stream")
 }
 
+output "build_files" {
+  value = fileset("${path.module}/../frontend/build", "**/*")
+}
+
 # Output the public website URL
 output "website_url" {
   value = aws_s3_bucket_website_configuration.react_site.website_endpoint
 }
-
-
-
-
 
 
 
